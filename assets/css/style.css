@@ -1214,3 +1214,33 @@ input[type=submit]:hover {
     margin-top: 0;
   }
 }
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366; /* WhatsApp green */
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 1000;
+  transition: transform 0.3s ease; /* Add transition for smooth animation */
+}
+
+.whatsapp-float img {
+  width: 50px;
+  height: 50px;
+  margin-top: 5px;
+  transition: transform 0.3s ease; /* Add transition for smooth animation */
+}
+
+.whatsapp-float:hover {
+  background-color: #128c7e; /* WhatsApp dark green on hover */
+  transform: scale(1.1); /* Scale up the button on hover */
+}
+
+.whatsapp-float:hover img {
+  transform: rotate(360deg); /* Rotate the icon 360 degrees on hover */
+}
